@@ -6,7 +6,7 @@ const app = require("./app");
 const config = require("./config");
 const logger = require("./library/helpers/loggerHelpers");
 const userModule = require("./components").user;
-
+const feedbackModule = require("./components").feedback;
 if (cluster.isMaster) {
   const cpuCoreCount = os.cpus().length;
 
@@ -15,8 +15,9 @@ if (cluster.isMaster) {
   }
 } else {
   app.use("/api/v1/user", userModule.routes);
-
+  app.use("/api/v1/feedback", feedbackModule.routes);
   userModule.model;
+  feedbackModule.model;
   mongoose
     .connect(config.dbURI, {
       useMongoClient: true

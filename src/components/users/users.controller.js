@@ -81,3 +81,4 @@ exports.getCurrentUser = async (req, res) => {
     );
   }
 };
+exports.postFeedback = async;
