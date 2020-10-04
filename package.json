@@ -1,0 +1,33 @@
+{
+  "name": "team-conserve_api",
+  "version": "1.0.0",
+  "description": "A Starter kit to build node api with a signup and login template",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js",
+    "server": "nodemon ./src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Damilola",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.2",
+    "gravatar": "^1.8.0",
+    "helmet": "^3.21.2",
+    "http-status-codes": "^1.4.0",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.9",
+    "morgan": "^1.9.1",
+    "winston": "^3.0.0-rc1"
+  }
+}
